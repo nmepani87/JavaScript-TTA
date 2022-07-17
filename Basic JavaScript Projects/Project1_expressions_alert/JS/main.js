@@ -8,3 +8,4 @@ document.write(" <br> "); //Used <br> as couldn't figure out easier way as docum
 document.write(9*9); // Example of an expression printed
 
 
+
