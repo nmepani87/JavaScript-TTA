@@ -29,12 +29,6 @@ function Add_numbers4() { //Defining a function
 Add_numbers_3(); //Returning results of the function
 Add_numbers_4(); //Returning results of the function
 
-function get_Date(){ //Defining a function
-    if (new Date().getHours()< 12) { //Getting JS to get the local time and then compare it to a value.
-        document.getElementById("Mealtime").innerHTML = "It's still breakfast time!" //If time comparision was true then asking a string to be printed via HTML elementFromPoint with id
-    }
-}
-
 function get_Date2(){ //Defining a function
     if (new Date().getMilliseconds()< 2988000000) { //Getting JS to get the local time in milliseconds and then compare it to a value.
         document.getElementById("Waketime").innerHTML = "You should be sleeping still!"; //If millisecond comparision was true then asking a string to be printed via HTML elementFromPoint with id for writing 
@@ -73,5 +67,4 @@ function Meal_function(){ //Defining a function
         Reply = "It's not a good time to eat"; //If none of the checks were not satisfied then to return this string
     }
     document.getElementById("meal_time").innerHTML = Reply; //Using the returned string for writing via HTML elementFromPoint with id 
-}
 }
