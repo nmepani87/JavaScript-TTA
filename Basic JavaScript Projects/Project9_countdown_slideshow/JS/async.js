@@ -1,0 +1,1 @@
+window.alert = "(document.getElementbyId("p1").innerHTML)";
