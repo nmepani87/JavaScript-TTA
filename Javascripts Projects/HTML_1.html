@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="=width=device-width" />
+		<title>Switch Statements</title>
+        <script src="./JavaScript_1.js" defer></script>
+	</head>
+
+	<body>
+        <!-- Switch Statement -->
+        <h2>What is your favourite genre of music to listen to?</h2>
+        <h4>Please pick one from this list:</h4>
+        <ul>
+            <li>DnB</li>
+            <li>Electronica</li>
+            <li>Garage</li>
+            <li>House</li>
+            <li>Techno</li>
+            <li>Trance</li>
+        </ul>
+        <h4>Write your pick in the following box:</h4>
+        <input id="MusicChoice" type="text">
+        <button onclick="musicFunction()">Submit</button>
+        <p id="GenreResult"></p>
+        <br>
+
+        <!-- GetElementsbyClassName -->
+        <h2>GetElementsbyClassName Method</h2>
+        <p class="Change">We will not change this text even though it has the 
+            same class as the next sentence.</p>
+        <p class="Change">This sentence will change after clicking the button below</p>
+        <button onclick="changeFunction()">Click here</button>
+        <br><br>
+
+        <!-- Canvas for JS -->
+        <h2>&#60;Canvas&#62; Element</h2>
+        <canvas id="JSCanvas" width="600" height="300" style="border:2px dashed black;">
+            Your browser does not support the HTML5 canvas tag</canvas>
+
+
+	</body>
+</html>

@@ -1,0 +1,57 @@
+.Contact {
+    padding: 10px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgb(255, 255, 255);
+    width: 30%;
+}
+
+input[type=text], [type=number] {
+    height: 26px;
+    width: 100%;
+    padding-top: 2%;
+    padding: 2px;
+    margin-top: 10px;
+    border: 1.5px solid white;
+    background-color: rgba(0, 0, 0, 0.641);
+    color: white;
+    display: inline;
+    box-shadow: 2px 2px 4px rgba(252, 252, 252, 0.641);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+input[type=text]:hover, [type=number]:hover {
+    background-color: azure;
+    color: black;
+}
+
+input[type=text]:focus, [type=number]:focus {
+    background-color: azure;
+    color: black;
+}
+
+label {
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+input[type=submit]{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 42%;
+}
+
+input[type=submit]:hover{
+    background-color: rgba(1, 0, 83,0.9);
+    font-weight: bolder;
+    color: white;
+    box-shadow: 2px 3px 6px;
+}
