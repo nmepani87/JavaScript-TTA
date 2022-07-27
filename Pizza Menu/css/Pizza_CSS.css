@@ -1,0 +1,92 @@
+#menuBG {
+    width: 600px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 600px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.menu_left {
+    width:200px;
+    height: 400px;
+    float: left;
+    background-color: goldenrod;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu_center {
+    width: 200px;
+    height:400px;
+    float: left;
+    background-color: goldenrod;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.menu_right {
+    width: 200px;
+    height:400px;
+    float: right;
+    background-color: goldenrod;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#showText {
+    width:200px;
+    height:190px;
+    margin: 0px auto;
+    float: left;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#cart {
+    top:0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+    color: darkorange;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 250px;
+    width: 110px;
+    height: 40px;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(136, 23, 15);
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(209, 54, 54);
+    margin-left: 5px;
+    margin-top: 25px;
+}
+
+body {
+    background-color: beige;
+}
+
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    background-color: peru;
+}
+
