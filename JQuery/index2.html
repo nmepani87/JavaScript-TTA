@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="=width=device-width" />
+		<title>jQuery Test 2</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</head>
+	<script>
+        //Starting a function and stating document is ready for it
+		$(document).ready(function(){
+            //Stating when h2 tag is click on execute the function
+			$("h2").click(function(){
+                //Asking to change the font color of the h2 and via chaining to slide the page up into the element
+                $(this).css("color", "blue").slideUp(2000);
+                });
+        });
+        //Starting a function and stating document is ready for it
+        $(document).ready(function(){
+             //Stating when input tag is receiving data to start keydown function
+            $("input").keydown(function(){
+                //Stating which element to place the return string and event result to
+                $("div").html("Key number: " + event.which);
+            });
+        });
+        //Starting a function and stating document is ready for it
+        $(document).ready(function(){
+             //Stating when h4 tag is click on execute the function
+            $("h4").click(function(){
+                //Asking to hide the contents within h4
+                $(this).hide();
+            });
+        });
+
+	</script>
+
+    <body>
+        <h2>By clicking this header jQuery will change it to a blue font</h2>
+        <h4>Click on this line to make it</h4>
+        <p>Type is something in the box below</p>
+        <input type="text">
+        <p>jQuery will show you which key number you are pressing</p>
+        <div />
+    </body>
+</html> 
