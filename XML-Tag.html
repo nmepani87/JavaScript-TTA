@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            var Song = "<song>" +
+                "<title>Children</title>" +
+                "<album>Soundtracks</album>" +
+                "<artist>Robert Miles</artist>" +
+                "<genre>Trance</genre>" +
+                "<year>1995</year>";
+            
+                XML_Parser = new DOMParser();
+
+                XML_Document = XML_Parser.parseFromString(Song,"text/xml");
+
+                document.getElementById("XML_Example").innerHTML = 
+                XML_Document.getElementsByTagName('title')[0].childNodes[0].nodeValue;
+
+        </script>
+    </body>
+
+</html>

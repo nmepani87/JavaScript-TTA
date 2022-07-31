@@ -5,14 +5,33 @@
 		<meta name="viewport" content="=width=device-width" />
 		<title>Data Attribute</title>
         <script src="./JavaScript_3.js" defer></script>
+        <link rel="stylesheet" href="./CSS_2.css">
+        <style>
+            body {
+                opacity: 1;
+                transition: 3s opacity;
+            }
+
+            body.fade-out {
+                opacity: 0;
+                transition: none;
+            }
+        </style>
 	</head>
 
 	<body>
-        <h2>Data Attribute</h2>
-        <h4>Phone Manufacturers</h4>
-        <h5>Click on the manufacturers to see a model they've made:</h5>
+        <script>
+            document.body.classList.add('fade-out');
+        </script>
+        <a href="#home">Home</a>
+        <a href="#animation">@Keyframes</a>
+        <a href="#zoomEffect">Zoom Effect</a>
+        <a href="#autoslideshow">Zoom Effect</a>
+        <h2 id="home"style="font-size: 2.5vw;">Data Attribute</h2>
+        <h4 style="font-size: 1.5vw;">Phone Manufacturers</h4>
+        <h5 style="font-size: 1.25vw;">Click on the manufacturers to see a model they've made:</h5>
 
-        <ul>
+        <ul style="font-size: 1.20vw;">
             <li onclick="displayType(this)" id="Google"
             data-character-type="Pixel 6 Pro">Google</li>
             <li onclick="displayType(this)" id="Apple"
@@ -22,5 +41,55 @@
             <li onclick="displayType(this)" id="Xiaomi"
             data-character-type="11T Pro">Xiaomi</li>
         </ul>
+        <br>
+
+        <button class="open-form-button" onclick="openForm()">Open Form</button>
+        <div class="form-popup" id="myForm">
+            <form name="contactForm" class="form-container" action=" " onsubmit="return validationForm()" method="post">
+                <label for="firstname">First Name:</label><br>
+                <input type="text" id="firstname" name="firstname"><br>
+                <label for="lastname">Last Name:</label><br>
+                <input type="text" id="lastname" name="lastname"><br>
+                <label for="contactnum">Contact Number:</label><br>
+                <input type="tel" id="contactnum" name="contactnum"><br><br>
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+            </form>
+        </div>
+
+        <!-- Added so scrolling down more obvious -->
+        <br><br><br><br><br><br><br><br>
+        <p id="animation" class="animation">Well this is trippy<br></p>
+
+         <!-- Added so scrolling down more obvious -->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <img id="zoomEffect" class="zoomEffect" src="./macaw-circle-game.jpg" alt="2 Macaws">
+
+        <!-- Auto slideshow -->
+        <br><br><br>
+        <div id="autoslideshow">
+            <div class="mySlideshow fade">
+                <img src="./slideshow1.png" alt="coding meme 1" style="width:50%">
+            </div>
+            <div class="mySlideshow fade">
+                <img src="./slideshow2.png" alt="coding meme 2" style="width:50%">
+            </div>
+            <div class="mySlideshow fade">
+                <img src="./slideshow3.png" alt="coding meme 3" style="width:50%">
+            </div>
+        </div>
+
+        <!-- JSON Stringify -->
+        <h3>JSON Stringify demo string</h3>
+        <p id="stringifydemo"></p>
+
+        <h3>JSON parse demo string</h3>
+        <p id="stringifydemo2"></p>
+
+        <h3>localStorage Property</h3>
+        <p id="lsproperty"></p>
+
+        <h3>OnDblClick Event Handler</h3>
+        <p ondblclick="dblFunction()" id="dblclick">Double click on this sentence for it to change font</p>
     </body>
 </html>
